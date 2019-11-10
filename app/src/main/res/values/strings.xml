@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FinanceDemo</string>
+
+    <string name="number_control">เลขคุม</string>
+    <string name="price">ยอดจัด</string>
+    <string name="increase">ดอกเบี้ย</string>
+    <string name="support">ค้ำ</string>
+    <string name="term">เทอม</string>
+    <string name="cover">ประกัน</string>
+    <string name="ew">ew</string>
+    <string name="increase_total">ดอกเบี้ยรวม</string>
+    <string name="year">ปี</string>
+    <string name="month">เดือน</string>
+    <string name="per_month">ผ่อนต่อเดือน</string>
+    <string name="per_month_total_vat">ยอดผ่อนรวม vat</string>
+
+    <string name="pay">จ่าย</string>
+    <string name="pay_total">จ่ายสุทธิ</string>
+
+    <string name="pay_com">จ่าย com </string>
+    <string name="pay_com_total">จ่ายcomสุทธิ</string>
+
+    <string name="chubb">จ่าย com </string>
+
+</resources>
