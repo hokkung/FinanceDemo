@@ -42,8 +42,7 @@ class MainActivity : AppCompatActivity() {
         override fun afterTextChanged(p0: Editable?) {
             try {
                 p0?.let {
-                    sec4_increase.text = financeServiceImpl.calIncreaseChubb(p0.toString().toDouble()).toString()
-                    sec4_total.text = financeServiceImpl.calChubbTotal().toString()
+                    setChubb(p0.toString().toDouble())
                 }
             } catch (e: Exception) {}
         }
@@ -59,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             try{
                 p0?.let {
                     val cover = p0.toString().toDouble()
-                    total_sec2.text = financeServiceImpl.calPayCheck(cover).toString()
+                    setCheck(cover)
                 }
             } catch (e: Exception) {}
         }
@@ -80,6 +79,13 @@ class MainActivity : AppCompatActivity() {
                     sec5_price.text = text
                     sec2_edit_transfer.setText(financeServiceImpl.calTransferSec2().toString())
                     setCom()
+                    val sec2Check = if (sec2_edit_cover.text.toString() != "") sec2_edit_cover.text.toString().toDouble() else 0.0
+                    setCheck(sec2Check)
+                    setPricePerMonth(financeServiceImpl.calPricePerMonth())
+                    setPricePerMonthWithVat(financeServiceImpl.calPricePerMonthWithVat())
+                    val increaseChubb = if (sec4_edit_increase.text.toString() != "") sec4_edit_increase.text.toString().toDouble() else 0.0
+                    setChubb(increaseChubb)
+                    setChubbLife()
                 }
             } catch (e: Exception) {}
         }
@@ -236,4 +242,12 @@ class MainActivity : AppCompatActivity() {
         sec5_total_price.text = financeServiceImpl.calChubbLife().toString()
     }
 
+    private fun setCheck(cover: Double) {
+        total_sec2.text = financeServiceImpl.calPayCheck(cover).toString()
+    }
+
+    private fun setChubb(increase: Double) {
+        sec4_increase.text = financeServiceImpl.calIncreaseChubb(increase).toString()
+        sec4_total.text = financeServiceImpl.calChubbTotal().toString()
+    }
 }

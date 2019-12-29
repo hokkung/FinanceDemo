@@ -94,11 +94,13 @@
             <TextView
                 android:id="@+id/sec5_total_price"
                 android:layout_weight="1"
+                android:textColor="@color/colorBlue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:ignore="NestedWeights" />
             <TextView
                 android:layout_weight="1"
+                android:textColor="@color/colorBlue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/total_price"/>

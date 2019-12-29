@@ -5,6 +5,10 @@ import kotlin.math.round
 
 class FinanceServiceImpl : FinanceService {
 
+    init {
+
+    }
+
     var number_control: Double = 0.0
     var price: Double = 0.0
     var increase: Double = 0.0

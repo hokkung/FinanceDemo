@@ -109,6 +109,7 @@
             android:id="@+id/sec3_total_price"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="@color/colorBlue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>

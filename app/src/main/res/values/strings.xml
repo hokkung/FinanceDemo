@@ -32,6 +32,8 @@
     <string name="chubb">CHUBB</string>
     <string name="count_per_month">จำนวนงวด</string>
     <string name="sum">รวม</string>
+    <string name="count_increase">ค่าเบี้ย</string>
+    <string name="life_increase">จำนวนเงิน</string>
     <!-- section 5 -->
     <string name="chubb_life">CHUBB LIFE</string>
     <string name="total_price">จำนวนเงิน</string>
