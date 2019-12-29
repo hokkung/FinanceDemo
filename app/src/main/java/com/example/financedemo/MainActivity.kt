@@ -35,10 +35,10 @@ class MainActivity : AppCompatActivity() {
         edit_cover.addTextChangedListener(coverSetChanged)
         edit_ew.addTextChangedListener(ewSetChanged)
         sec2_edit_cover.addTextChangedListener(sec2Cover)
-        sec4_edit_increase.addTextChangedListener(increateChubb)
+        sec4_edit_increase.addTextChangedListener(increaseChubb)
     }
 
-    private var increateChubb = object : TextWatcher {
+    private var increaseChubb = object : TextWatcher {
         override fun afterTextChanged(p0: Editable?) {
             try {
                 p0?.let {
@@ -112,7 +112,7 @@ class MainActivity : AppCompatActivity() {
         override fun afterTextChanged(p0: Editable?) {
             try {
                 p0?.let {
-                    val increase = if (it.toString() != "") it.toString().toInt() else 0
+                    val increase = if (it.toString() != "") it.toString().toDouble() else 0.0
                     financeServiceImpl.increase = increase
                     setIncreaseEwSec3()
                     setVatTotal(financeServiceImpl.calTotalVat())

@@ -34,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:textColor="@color/colorPrimaryDark"
             android:text="@string/price" />
 
         <EditText
@@ -54,6 +55,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_weight="3"
             android:text="@string/increase" />
 
@@ -74,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="numberDecimal" />
 
                 <TextView
                     android:layout_width="match_parent"

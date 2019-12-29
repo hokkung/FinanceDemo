@@ -1,12 +1,13 @@
 package com.example.financedemo
 
 import kotlin.math.ceil
+import kotlin.math.round
 
 class FinanceServiceImpl : FinanceService {
 
     var number_control: Double = 0.0
     var price: Double = 0.0
-    var increase: Int = 0
+    var increase: Double = 0.0
     var support: Double = 0.0
     var term: Double = 0.0
     var cover: Double = 0.0
@@ -24,19 +25,19 @@ class FinanceServiceImpl : FinanceService {
     }
 
     override fun calTransferSec2(): Double {
-        return ((price * 5) / 100) + 1500
+        return ((price * 0.5) / 100) + 1500
     }
 
     override fun calPricePerMonth(): Double {
-        val vat = ((price * (increase + support + term + cover + ew)) / 100)
+        val vat = ((price * (increase + support + term + cover + ew)) / 100) * year
         val month = year * 12
         val totalPrice = price + vat
-        return ceil(totalPrice / month)
+        return totalPrice / month
     }
 
     override fun calPricePerMonthWithVat(): Double {
         val vat = (calPricePerMonth() * 7) / 100
-        return calPricePerMonth() + vat
+        return ceil(calPricePerMonth() + vat)
     }
 
     override fun calPayCheck(cover: Double): Double {
@@ -54,7 +55,7 @@ class FinanceServiceImpl : FinanceService {
     }
 
     override fun calIncreaseChubb(increase: Double): Double {
-        increaseChubb = (calPricePerMonthWithVat() * increase) / 100
+        increaseChubb = round((calPricePerMonthWithVat() * increase) / 100)
         return increaseChubb
     }
 
