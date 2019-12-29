@@ -6,7 +6,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.section_1.*
 import kotlinx.android.synthetic.main.section_2.*
 import kotlinx.android.synthetic.main.section_3.*
 import kotlinx.android.synthetic.main.section_4.*
