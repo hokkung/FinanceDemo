@@ -12,7 +12,8 @@
     <string name="year">ปี</string>
     <string name="month">เดือน</string>
     <string name="per_month">ผ่อนต่อเดือน</string>
-    <string name="per_month_total_vat">ยอดผ่อนรวม vat</string>
+    <string name="per_month_total_vat">ผ่อนรวมvat</string>
+    <string name="transfer">ค่าโอน</string>
 
     <string name="pay">จ่าย</string>
     <string name="pay_total">จ่ายสุทธิ</string>
@@ -20,6 +21,20 @@
     <string name="pay_com">จ่าย com </string>
     <string name="pay_com_total">จ่ายcomสุทธิ</string>
 
-    <string name="chubb">จ่าย com </string>
+    <!-- section 2 -->
+    <string name="pay_section2">จ่ายเช็ค</string>
+    <string name="minus">-</string>
+    <string name="equal">=</string>
+    <!-- section 3 -->
+    <string name="percent">เปอร์เซ็น</string>
+    <string name="multiply">*</string>
+    <!-- section 4 -->
+    <string name="chubb">CHUBB</string>
+    <string name="count_per_month">จำนวนงวด</string>
+    <string name="sum">รวม</string>
+    <!-- section 5 -->
+    <string name="chubb_life">CHUBB LIFE</string>
+    <string name="total_price">จำนวนเงิน</string>
+
 
 </resources>
